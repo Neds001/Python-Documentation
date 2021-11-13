@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Python Documentation</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+	<nav id="navbar">
+  <header>Python Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#What_you_should_already_know"
+        >What you should already know</a
+      >
+    </li>
+    <li>
+      <a class="nav-link
+        example, a web browser), JavaScript can be connected to the objects of" href="#Java_and_Python">Java and Python</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>
+    <li>
+      <a class="nav-link" href="#variable_assignment">Variable Assignment</a>
+    </li>
+    <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+    <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+    <li><a class="nav-link" href="#Constants">Constants</a></li>
+    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+    <li>
+      <a class="nav-link" href="#if...else_statement">if...else statement</a>
+    </li>
+    <li><a class="nav-link" href="#while_statement">while statement</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        <strong>Python</strong> is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+      </p>
+
+      <p>
+        Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
+      </p>
+      <p>
+          Guido van Rossum began working on Python in the late 1980s, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000 and introduced new features, such as list comprehensions and a cycle-detecting garbage collection system (in addition to reference counting). Python 3.0 was released in 2008 and was a major revision of the language that is not completely backward-compatible. Python 2 was discontinued with version 2.7.18 in 2020.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+    <article>
+      <p><strong>6 Things</strong> To Know Before You Learn Python</p>
+
+      <ol>
+        <li>
+          Learn the difference between front-end and back-end.
+        </li>
+        <li>Understand what you can do with Python.</li>
+        <li>
+         Install Python (on your PC or Mac).
+        </li>
+         <li>Python 2 vs. Python 3 — Know the difference.</li>
+        <li>Understand what jobs hire Python developers.</li>
+        <li>You can be a Python developer without knowing <strong>“everything”</strong> about Python.</li>
+      </ol>
+    </article>
+  </section>
+  <section class="main-section" id="Java_and_Python">
+    <header>Java and Python</header>
+    <article>
+      <p>
+        Java is a statically typed and compiled language, and Python is a dynamically typed and interpreted language. This single difference makes Java faster at runtime and easier to debug, but Python is easier to use and easier to read.
+      </p>
+      <p>
+        Java is a statically typed and compiled language, and Python is a dynamically typed and interpreted language. This single difference makes Java faster at runtime and easier to debug, but Python is easier to use and easier to read.
+      </p>
+      <p>
+      Python was first released in 1991. It is an interpreted, high-level, general purpose programming language. It is Object-Oriented.
+
+Designed by Guido van Rossum, Python actually has a design philosophy centered around code readability. The Python community will grade each other’s code based on how Pythonic the code is.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article>
+      To get started with writing Python, open the Scratchpad and write your first "Hello world" Python code:
+      <code># This program prints Hello, world!
+print('Hello, world!')
+      </code>
+      Output: <code>Hello, world!</code>
+    </article>
+  </section>
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <p>
+      A Python variable is a reserved memory location to store values. In other words, a variable in a python program gives data to the computer for processing.
+    </p>
+    <p>
+     Every value in Python has a datatype. Different data types in Python are Numbers, List, Tuple, Strings, Dictionary, etc. Variables in Python can be declared by any name or even alphabets like a, aa, abc, etc.
+    </p>
+  </section>
+  <section class="main-section" id="variable_assignment">
+    <header>Variable Assignment</header>
+    <article>
+      Think of a variable as a name attached to a particular object. In Python, variables need not be declared or defined in advance, as is the case in many other programming languages. To create a variable, you just assign it a value and then start using it. Assignment is done with a single equals sign (=):
+      <p>
+        <code>>>> n = 300</code>This is read or interpreted as “n is assigned the value 300.” Once this is done, n can be used in a statement or expression, and its value will be substituted:
+        <code>>>> print(n)
+300</code>Just as a literal value can be displayed directly from the interpreter prompt in a REPL session without the need for <i>print()</i>, so can a variable:
+        <code>>>> n
+300</code> Later, if you change the value of n and use it again, the new value will be substituted instead:
+        <code>>>> n = 1000
+>>> print(n)
+1000
+>>> n
+1000</code>Python also allows chained assignment, which makes it possible to assign the same value to several variables simultaneously:
+        <code>>>> a = b = c = 300
+>>> print(a, b, c)
+300 300 300</code>The chained assignment above assigns 300 to the variables a, b, and c simultaneously.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Variable_scope">
+    <header>Variable scope</header>
+    <article>
+      <p>
+       Not all variables are accessible from all parts of our program, and not all variables exist for the same amount of time. Where a variable is accessible and how long it exists depend on how it is defined. We call the part of a program where a variable is accessible its scope, and the duration for which the variable exists its lifetime.
+      </p>
+
+      <p>
+        A variable which is defined in the main body of a file is called a global variable. It will be visible throughout the file, and also inside any file which imports that file. Global variables can have unintended consequences because of their wide-ranging effects – that is why we should almost never use them. Only objects which are intended to be used globally, like functions and classes, should be put in the global namespace.
+      </p>
+      <p>
+        A variable which is defined inside a function is local to that function. It is accessible from the point at which it is defined until the end of the function, and exists for as long as the function is executing. The parameter names in the function definition behave like local variables, but they contain the values that we pass into the function when we call it. When we use the assignment operator <i>(=)</i> inside a function, its default behaviour is to create a new local variable – unless a variable with the same name is already defined in the local scope.
+      </p>
+      <p>Here is an example of variables in different scopes:</p>
+      <code># This is a global variable
+a = 0
+if a == 0:
+   # This is still a global variable
+ b = 1
+def my_function(c):
+  # this is a local variable
+ d = 3
+  print (c)
+  print (d)
+# Now we call the function, passing the value 7 as the first and only parameter
+my_function(7)
+# a and b still exist
+print(a)
+print(b)
+# c and d don't exist anymore
+print(c)
+print(d)
+                     -- these statements will give us name errors!</code>
+    </article>
+  </section>
+  <section class="main-section" id="Global_variables">
+    <header>Global variables</header>
+    <article>
+      <p>
+        In the programming world, a global variable in Python means having a scope throughout the program,
+i.e., a global variable value is accessible throughout the program unless shadowed.
+      </p>
+
+      <p>
+        A global variable in Python is often declared as the top of the program. In other words, variables that
+are declared outside of a function are known as global variables.
+      </p>
+      <p>You can access global variables in Python both inside and outside the function.
+        <code>Syntax:
+X = "sampleGlobalValue"
+Def fn1():</code>
+</p>
+    </article>
+  </section>
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <article>
+      <p>
+        <strong>Constant</strong> is a value that remains the same and does not change or it cannot be modified. Python does not allow us to create constants as easy as we do in C, C++ or Java. In Python, we can define constants in a module, where a module is a file which could be imported to access the defined constants and methods.
+      </p>
+      <p>
+        <strong>Note:</strong> A <strong>module constant</strong> should be in uppercase alphabets, where multi-word constant names are separated by an underscore(_).
+      </p>
+      <p>
+        Let's look at an example to define a constant in a module. For this, we are going to create a module named <strong>misc</strong> i.e. a file named <strong>misc.py</strong> and in this module, we are going to define some constants.
+      </p>
+      <p>Creating a module - <strong>misc</strong></p>
+      <code># Python - Defining constants in a module/file
+
+APPLE = 'RED'
+GRAVITY = 9.8
+PLANETS = 8</code>
+      <p>Let's import the module <strong>misc</strong>, in order to use its constant values.</p>
+      <code># Python - Defining constants in a module/file
+
+import misc
+
+print('Value of constant APPLE : ',misc.APPLE)
+print('Value of constant GRAVITY : ',misc.GRAVITY)
+print('Value of constant PLANETS : ',misc.PLANETS)</code>
+      <p>Output:</p><code>Value of constant APPLE :  RED
+Value of constant GRAVITY :  9.8
+Value of constant PLANETS :  8</code>
+    </article>
+  </section>
+  <section class="main-section" id="Data_types">
+    <header>Data types</header>
+    <article>
+      <p>The latest ECMAScript standard defines seven data types:</p>
+      <ul>
+          <p>Seven data types that are primitives:</p>
+            <li> <strong>Python Numbers</strong>:Integers, Float, Complex.</li>
+            <li>
+              <strong>Python List</strong>:It is effortless to declare a list. The list is enclosed with brackets and commas are used to separate the items. <code>>>> a = [5,9.9,’list’]</code></li>
+            <li><strong>Python Tuple</strong>: A Tuple is a sequence of items that are in order, and it is not possible to modify the Tuples. The main difference list and tuples are that tuple is immutable, which means it cannot be altered. Tuples are generally faster than the list data type in Python because it cannot be changed or modified like list datatype. The primary use of Tuples is to write-protect data. Tuples can be represented by using parentheses (), and commas are used to separate the items. <code>>>> t = (6,’tuple’,4+2r)</code></li>
+            <li><strong>Python Strings</strong>: A String is a sequence of Unicode characters. In Python, String is called str. Strings are represented by using Double quotes or single quotes. If the strings are multiple, then it can be denoted by the use of triple quotes “”” or ”’. All the characters between the quotes are items of the string.<code>>>> s = “Python String”</code><code>>>> s = ”’a multi-string</code>Strings are also immutable like tuples and items can be extracted using slicing operators []. If one wants to represent something in the string using quotes, then they will need to use other types of quotes to define the string in the beginning and the ending.<code>>>> print(“This string contains a single quote (‘) character.”)</code>This string contains a single quote (‘) character.<code>>>> print(‘This string contains a double quote (“) character.’)</code>This string contains a double quote (“) character.
+            </li>
+            <li><strong>Python Set</strong>: The Collection of Unique items that are not in order is called Set. Braces {} are used to defined set and a comma is used to separate values. One will find that the items are unordered in a set data type. Duplicates are eliminated in a set and set only keeps unique values. Operations like intersection and union can be performed on two sets. <code>>>> a = {4,5,5,6,6,6}
+>>> a 
+{4, 5, 6}</code></li>
+            <li><strong>Python Dictionary</strong>: Dictionary is a type of python data type in which collections are unordered, and values are in pairs called key-value pairs. This type of data type is useful when there is a high volume of data. One of the best functions of Dictionaries data type is retrieving the data for which it is optimized. The value can only be retrieved if one knows the key to retrieve it. Braces {} (curly brackets) are used to define dictionaries data type in Python. A Pair in the dictionary data type is an item which is represented as key:value. The value and the key can be of any data type.<code>>>> d = {3:’key’,4:’value’}</code>
+            </li>
+            <li>
+              <strong>Boolean Type</strong>: There can be only two types of value in the Boolean data type of Python, and that is True or False. <code>>>> type(True)
+<class ‘bool’>
+>>> type(False)
+<class ‘bool’></code>
+            </li>
+      </u>
+      Although these data types are a relatively small amount, they enable you
+      to perform useful functions with your applications. Objects and functions
+      are the other fundamental elements in the language. You can think of
+      objects as named containers for values, and functions as procedures that
+      your application can perform.
+    </article>
+  </section>
+  <section class="main-section" id="if...else_statement">
+    <header>if...else statement</header>
+    <article>
+      The if-else statement is used to code the same way you would use it in the English language. The syntax for the if-else statement is:
+      <code>if(condition):
+      Indented statement block for when condition is TRUE
+else:
+      Indented statement block for when condition is FALSE</code>Lets try to work on the code from above:
+      <code>score_theory = 40
+score_practical = 45
+if(score_theory + score_practical > 100):
+    print("Please check the input. Score exceeds total possible score.")
+else:
+    print("Score validated. Your total is: ", score_theory + score_practical)</code>
+      <code>Score validated. Your total is:  85</code>
+      <p>Now imagine a case where one of the score exceeds 50, but the total is still less than 100. What do you think would happen then?</p>
+      <code>score_theory = 60
+score_practical = 40
+if(score_theory + score_practical > 100):
+    print("Please check the input. Score exceeds total possible score.")
+else:
+    print("Score validated. Your total is: ", score_theory + score_practical)</code>
+      <code>Score validated. Your total is:  100</code>  
+    </article>
+  </section>
+  <section class="main-section" id="while_statement">
+    <header>while statement</header>
+    <article>
+     The while loop is somewhat similar to an if statement, it executes the code inside, if the condition is True. However, as opposed to the if statement, the while loop continues to execute the code repeatedly as long as the condition is True.<code>while expression:
+   statement(s)</code>
+      <p>Example:</p>
+      <code>#!/usr/bin/python
+
+count = 0
+while (count < 9):
+   print 'The count is:', count
+   count = count + 1
+
+print "Good bye!"</code>
+        <p>When the above code is executed, it produces the following result −</p>
+        <code>The count is: 0
+The count is: 1
+The count is: 2
+The count is: 3
+The count is: 4
+The count is: 5
+The count is: 6
+The count is: 7
+The count is: 8
+Good bye!</code>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.python.org/doc/"
+            target="_blank"
+            >python.org</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+</body>
+</html>
